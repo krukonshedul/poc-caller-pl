@@ -1,0 +1,10 @@
+name: caller
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  call:
+    uses: krukonshedul/poc-shared-workflow/.github/workflows/shared.yaml@main
+    with:
+      expected: "witaj swiecie"
